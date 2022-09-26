@@ -20,8 +20,24 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display:flex;
+  padding:20px
 }
+.left {
+  align-items: flex-start;
+}
+.right {
+  padding-left: 15px;
+  padding-right: 5px;
 
+}
+.top {
+  display:flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: large;
+  padding-bottom: 10px;
+}
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -51,6 +67,7 @@ body {
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  margin-top: 15px;
 }
 
 button.continue {
