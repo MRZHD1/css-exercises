@@ -5,17 +5,75 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display:flex;
+  flex-direction: column;
 }
-
+a {
+  color: black;
+  text-decoration: none; 
+}
+.header {
+  display: flex;
+  margin-bottom: auto;
+}
+.header > * {
+  padding: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+}
+.header > * > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.header .left-links {
+  margin-right: auto;
+}
+.footer {
+  background-color: #eeeeee;
+  display: flex;
+  margin-top: auto;
+}
+.footer > *{
+  padding: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+}
+.footer > * > * {
+  margin-right:10px;
+  margin-left: 10px;
+}
+.footer .left-links {
+  margin-right: auto;
+}
 img {
+  display: block;
+  margin: 0 auto;
   width: 600px;
 }
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content > * {
+  display:flex;
+  justify-content: center;
+  
+}
+
 
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 7px;
+  margin:5px;
 }
 
 input {
