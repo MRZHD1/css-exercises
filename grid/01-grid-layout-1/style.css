@@ -4,6 +4,10 @@ body, html {
 }
 
 .container {
+  display: grid;
+  gap: 15px;
+  grid-template-rows: 12.5% 12.5% 62.5% 12.5%;
+  grid-template-columns: 25% 75%;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -21,10 +25,12 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+  grid-area: 1 / 1 / 2 / 3;
 }
 
 .sidebar {
   background-color: #FF7755;
+  grid-area: 2 / 1 / 4 / 2
 }
 
 .nav {
@@ -44,4 +50,5 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-column:1 / 3;
 }
